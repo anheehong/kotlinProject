@@ -13,5 +13,7 @@ class LazySample{
 
 fun main(){
 
-    println( "hello world" )
+    val sample = LazySample()
+    println( "lazyStr = ${sample.lazyStr}")
+    println( " = ${sample.lazyStr}")
 }
