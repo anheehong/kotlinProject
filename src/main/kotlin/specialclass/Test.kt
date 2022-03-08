@@ -22,10 +22,13 @@ fun main(){
     println( thirdUser.hashCode() )
 
     println( user.copy() )
+    println( user.copy().hashCode() )
+
     println( user === user.copy() )
     println( user.copy( "Max" ) )
     println( user.copy( id = 3 ) )
 
     println( "name = ${user.component1()}")
     println( "id = ${user.component2()}")
+
 }

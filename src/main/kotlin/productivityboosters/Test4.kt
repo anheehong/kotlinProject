@@ -10,5 +10,8 @@ fun main(){
     println( username == user.component1())
 
     val( _, emailAddress ) = getUser()
+    print( getUser() )
+
+
 
 }

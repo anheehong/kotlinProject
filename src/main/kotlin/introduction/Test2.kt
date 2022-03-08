@@ -14,6 +14,10 @@ fun main(){
     val sophia = Person( "Sophia" )
     val claudia = Person( "Claudia" )
     sophia likes claudia
+
+    for( like in sophia.likedPeople){
+        print( like.name )
+    }
 }
 
 class Person( val name : String ){
