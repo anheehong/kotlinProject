@@ -20,13 +20,16 @@ fun sortArray( rule : IntArray ){
     var tempRule = rule.copyOf()
     Arrays.sort( tempRule )
 
+    var output : IntArray = IntArray( rule.size, {9999} )
+    var index = 0
+
     for( ruleEl in rule ){
-
         for( i in tempRule.indices ){
-
-            if( ruleEl == tempRule[i] ){
-
-                print( i )
+            if( ruleEl == tempRule[i] && !output.contains( i )){
+                print( "$i " )
+                output[index] = i
+                index++
+                break
             }
         }
     }
